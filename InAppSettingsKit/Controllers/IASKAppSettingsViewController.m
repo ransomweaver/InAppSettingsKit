@@ -186,8 +186,8 @@ CGRect IASKCGRectSwap(CGRect rect);
 																					action:@selector(dismiss:)];
 		self.navigationItem.rightBarButtonItem = buttonItem;
 	} 
-	if (!self.title) {
-		self.title = NSLocalizedString(@"Settings", @"");
+	if (!self.navigationItem.title) {
+		self.navigationItem.title = NSLocalizedString(@"Settings", @"");
 	}
 	
 	if ([self.settingsStore isKindOfClass:[IASKSettingsStoreUserDefaults class]]) {
